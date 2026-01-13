@@ -29,24 +29,9 @@ export default async function Home() {
         <main className="flex flex-col gap-16">
           <section className="flex flex-col gap-10">
             <div className="flex flex-col gap-4">
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="bg-muted text-muted-foreground inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs">
-                  <span className="bg-foreground size-1.5 rounded-full" />
-                  Extension navigateur
-                </span>
-                <span className="bg-muted text-muted-foreground inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs">
-                  <span className="bg-foreground size-1.5 rounded-full" />
-                  Vote en 1 clic
-                </span>
-                <span className="bg-muted text-muted-foreground inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs">
-                  <span className="bg-foreground size-1.5 rounded-full" />
-                  Intelligence collective
-                </span>
-              </div>
 
               <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
-                Et si chaque site web avait une note donnée par ceux qui le visitent
-                vraiment
+                L&apos;indice de confiance par les utilisateurs pour les utilisateurs.
               </h1>
               <p className="text-muted-foreground max-w-2xl text-pretty text-lg leading-8">
                 WebScore est une extension minimaliste qui ajoute une couche de
@@ -84,7 +69,7 @@ export default async function Home() {
                   <p className="text-sm font-medium">🟢🟠🔴 L’indicateur discret</p>
                   <p className="text-muted-foreground text-sm leading-7">
                     Une petite pastille change de couleur selon la fiabilité du
-                    domaine, d’après les votes et les retours réels
+                    domaine, d’après les votes des utilisateurs
                   </p>
 
                   <div className="flex flex-col gap-3">
@@ -118,32 +103,39 @@ export default async function Home() {
           <section className="flex flex-col gap-8">
             <div className="flex flex-col gap-3">
               <h2 className="text-2xl font-semibold tracking-tight">
-                Le problème, aujourd’hui
+                On ne sait pas toujours si un site est fiable.
               </h2>
               <p className="text-muted-foreground max-w-3xl leading-7">
                 Le web est devenu une jungle : dropshipping douteux, fake news, pages
-                noyées sous la pub, services clients fantômes. On clique sans savoir
-                ce qui nous attend
+                noyées sous la pub, services clients fantômes.
               </p>
             </div>
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
               <div className="bg-card flex flex-col gap-2 rounded-xl border p-6">
-                <p className="text-sm font-medium">Temps perdu</p>
+                <p className="text-sm font-medium">Bien référencés, pas forcément fiables</p>
                 <p className="text-muted-foreground text-sm leading-7">
-                  Tu te rends compte trop tard que le contenu est inutilisable
+                  Beaucoup de sites ressortent très bien sur Google, mais ne répondent
+                  pas vraiment à ce qu’on cherche
+                  <br />
+                  On tombe sur des pages à rallonge, optimisées pour le SEO : du
+                  remplissage pour nous faire scroller, pas pour nous aider
                 </p>
               </div>
               <div className="bg-card flex flex-col gap-2 rounded-xl border p-6">
-                <p className="text-sm font-medium">Confiance cassée</p>
+                <p className="text-sm font-medium">Boutiques douteuses et dropshipping</p>
                 <p className="text-muted-foreground text-sm leading-7">
-                  Impossible de savoir si un site est fiable avant d’y entrer
+                  Avant même de cliquer, difficile de distinguer une vraie boutique
+                  d’un site éphémère : délais flous, retours compliqués, service client
+                  introuvable
                 </p>
               </div>
               <div className="bg-card flex flex-col gap-2 rounded-xl border p-6">
-                <p className="text-sm font-medium">Aucune mémoire</p>
+                <p className="text-sm font-medium">Avis éparpillés (et parfois truqués)</p>
                 <p className="text-muted-foreground text-sm leading-7">
-                  Tes expériences restent privées, et les autres refont les mêmes
+                  Les retours sont dispersés entre forums, réseaux et avis sponsorisés
+                  <br />
+                  Résultat : chacun teste dans son coin… et on refait tous les mêmes
                   erreurs
                 </p>
               </div>
@@ -156,29 +148,31 @@ export default async function Home() {
                 La solution : WebScore
               </h2>
               <p className="text-muted-foreground max-w-3xl leading-7">
-                Un indicateur de réputation universel : simple, rapide, communautaire
+                Un indicateur de réputation simple et communautaire, visible directement
+                pendant que tu navigues
               </p>
             </div>
 
             <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
               <div className="bg-card flex flex-col gap-4 rounded-xl border p-6">
-                <p className="text-sm font-medium">1 clic pour voter</p>
+                <p className="text-sm font-medium">Un vote, en 1 clic</p>
                 <p className="text-muted-foreground text-sm leading-7">
-                  Pouce bleu si c’est clean et utile, pouce rouge si c’est une arnaque
-                  ou illisible
+                  Tu partages ton ressenti sans friction : utile, moyen, ou à éviter.
+                  Ça aide les autres à trier plus vite
                 </p>
               </div>
               <div className="bg-card flex flex-col gap-4 rounded-xl border p-6">
-                <p className="text-sm font-medium">Résumé instantané</p>
+                <p className="text-sm font-medium">Un résumé clair</p>
                 <p className="text-muted-foreground text-sm leading-7">
-                  “Fiable mais trop de pubs”, “Support excellent”, “Désabonnement
-                  difficile”
+                  En un coup d’œil, tu vois les retours qui comptent : “trop de pubs”,
+                  “support réactif”, “désabonnement compliqué”
                 </p>
               </div>
               <div className="bg-card flex flex-col gap-4 rounded-xl border p-6">
-                <p className="text-sm font-medium">Le grand classement</p>
+                <p className="text-sm font-medium">Le classement par catégories</p>
                 <p className="text-muted-foreground text-sm leading-7">
-                  Top et flop mondial des domaines les plus appréciés, par catégories
+                  Découvre les domaines les mieux notés (et ceux à éviter), par type de
+                  site : e-commerce, médias, SaaS, etc
                 </p>
               </div>
             </div>
@@ -209,7 +203,6 @@ export default async function Home() {
 
         <footer className="text-muted-foreground flex flex-col gap-2 text-sm">
           <p>© {new Date().getFullYear()} WebScore</p>
-          <p>Tu veux être prévenu au lancement ? Inscris-toi à la liste d’attente</p>
         </footer>
       </div>
     </div>
